@@ -1,0 +1,8 @@
+/META-INF/
+/application/
+/applicationContext.xml
+/controller/
+/database/
+/model/
+/services/
+/test/

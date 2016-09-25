@@ -1,0 +1,143 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>LocationV</groupId>
+  <artifactId>LocationV</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+<organization>
+  <name>IT4OMAN</name>
+  </organization>
+  <dependencies>
+    <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-context</artifactId>
+        <version>4.2.5.RELEASE</version>
+    </dependency>
+    <dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-tx</artifactId>
+    <version>4.2.5.RELEASE</version>
+    </dependency>
+  
+    
+     <dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-orm</artifactId>
+    <version>4.2.5.RELEASE</version>
+    </dependency>
+    
+  <dependency>
+	<groupId>postgresql</groupId>
+	<artifactId>postgresql</artifactId>
+	<version>9.1-901.jdbc4</version>
+</dependency>
+
+<dependency>
+<groupId>repport</groupId>
+  <artifactId>com.rapport</artifactId>
+   <version>1.0.0</version>
+</dependency>
+
+<dependency><groupId>repport</groupId>
+  <artifactId>com.joda</artifactId>
+      <version>1.0.0</version>
+    </dependency>
+
+<dependency>
+  <groupId>repport</groupId>
+  <artifactId>com.groovy</artifactId>
+  <version>1.0.0</version>
+ </dependency>
+ 
+ <dependency>
+  <groupId>repport</groupId>
+  <artifactId>commons-beanutils</artifactId>
+  <version>1.0</version>
+ </dependency>
+ 
+ <dependency>
+ <groupId>repport</groupId>
+  <artifactId>commons-collections-3.2.1</artifactId>
+      <version>1.0</version>
+ </dependency>
+ 
+ <dependency>
+ <groupId>repport</groupId>
+  <artifactId>commons-digester-2.1</artifactId>
+  <version>1.0</version>
+ </dependency>
+<dependency>
+<groupId>repport</groupId>
+  <artifactId>commons-logging-1.1.1</artifactId>
+      <version>1.0</version>
+</dependency>
+
+<dependency>
+<groupId>repport</groupId>
+  <artifactId>itext-2.1.7.js4</artifactId>
+      <version>1.0</version>
+</dependency>
+
+<dependency>
+<groupId>repport</groupId>
+  <artifactId>itextpdf-5.5.3</artifactId>
+      <version>1.0</version>
+</dependency>
+
+<dependency>
+<groupId>repport</groupId>
+  <artifactId>jasperreports-fonts-6.2.0</artifactId>
+  <version>1.0</version>
+</dependency>
+    <dependency>
+    <groupId>repport</groupId>
+  <artifactId>jasperreports-functions-6.2.0</artifactId>
+      <version>1.0</version>
+    </dependency>
+    
+    <dependency>
+    <groupId>repport</groupId>
+  <artifactId>jasperreports-javaflow-6.2.0</artifactId>
+      <version>1.0</version>
+    </dependency>
+     <dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-beans</artifactId>
+    <version>4.2.5.RELEASE</version>
+    </dependency>
+      <dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-core</artifactId>
+    <version>4.2.5.RELEASE</version>
+    </dependency>
+    
+   <dependency>
+    <groupId>org.hibernate</groupId>
+    <artifactId>hibernate-entitymanager</artifactId>
+    <version>5.0.1.Final</version>
+</dependency>
+
+</dependencies>
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.3</version>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+      </plugin>
+      
+      <plugin>
+    <groupId>com.zenjava</groupId>
+    <artifactId>javafx-maven-plugin</artifactId>
+    <version>8.3.0</version>
+    <configuration>
+        <mainClass>app.Main</mainClass>
+    </configuration>
+</plugin>
+    </plugins>
+    
+    
+  </build>
+</project>

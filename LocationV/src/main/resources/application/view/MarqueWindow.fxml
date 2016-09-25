@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="422.0" prefWidth="429.0" style="-fx-background-color: #313232;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MarqueController">
+	<children>
+		<HBox layoutX="9.0" layoutY="361.0" prefHeight="39.0" prefWidth="411.0" spacing="10.0">
+			<children>
+				<Button layoutX="8.0" layoutY="443.0" mnemonicParsing="false" onAction="#deleteModel" prefHeight="39.0" prefWidth="100.0" styleClass="button1" text="حذف" />
+				<Button layoutX="237.0" layoutY="443.0" mnemonicParsing="false" onAction="#addModel" prefHeight="39.0" prefWidth="97.0" styleClass="button1" text="إضافة" />
+            <Button fx:id="btnedit" mnemonicParsing="false" onAction="#edit" prefHeight="37.0" prefWidth="94.0" styleClass="button1" text="تعديل" />
+				<Button fx:id="btnExit" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="93.0" styleClass="button1" text="خروج" />
+			</children>
+		</HBox>
+		<TableView fx:id="tableMarque" layoutX="101.0" layoutY="53.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="226.0" prefWidth="227.0">
+			<columns>
+				<TableColumn fx:id="colidmarque" prefWidth="84.0" text="رقم التعريف" />
+				<TableColumn fx:id="colnommarque" prefWidth="140.0" text="إسم الشركة" />
+			</columns>
+		</TableView>
+		<Label fx:id="txtidcat" layoutX="189.0" layoutY="400.0" text="Label" visible="false" />
+      <HBox fx:id="hbox" alignment="CENTER" layoutX="95.0" layoutY="291.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="30.0" prefWidth="261.0" spacing="14.0">
+         <children>
+      		<Label fx:id="lblnamecat" text="إسم الشركة" textFill="WHITE" />
+      		<TextField fx:id="txtNomMarque" />
+         </children>
+      </HBox>
+      <Label layoutX="187.0" layoutY="14.0" styleClass="lbl" text="موديلات السيارات" textFill="#eeeeee" />
+	</children>
+</AnchorPane>

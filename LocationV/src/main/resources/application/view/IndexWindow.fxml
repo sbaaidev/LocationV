@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="685.0" prefWidth="1024.0" style="-fx-background-color: #313232;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.IndexController">
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="70.0" prefWidth="1024.0" style="-fx-background-color: #f18817;" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="شركة عبر الخليج لتقنية المعلومات" textFill="WHITE">
+               <font>
+                  <Font name="SansSerif Bold" size="13.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="85.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" styleClass="logofooter" />
+            <Label text="Trans Gulf Information Technology" textFill="WHITE">
+               <font>
+                  <Font name="SansSerif Bold" size="11.0" />
+               </font>
+            </Label>
+         </children></HBox>
+   </bottom>
+   <top>
+      <VBox alignment="CENTER" nodeOrientation="RIGHT_TO_LEFT" prefHeight="144.0" prefWidth="1024.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox nodeOrientation="RIGHT_TO_LEFT" prefHeight="32.0" prefWidth="1024.0" spacing="5.0" style="-fx-background-color: #f18817;">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#close" styleClass="close" text="Button" />
+                  <Button mnemonicParsing="false" onAction="#minimiz" styleClass="minimizar" text="Button" />
+               </children>
+            </HBox>
+            <ImageView fitHeight="101.0" fitWidth="252.0" pickOnBounds="true" preserveRatio="true" styleClass="imgmenu0">
+               <VBox.margin>
+                  <Insets bottom="5.0" top="10.0" />
+               </VBox.margin></ImageView>
+         </children>
+      </VBox>
+   </top>
+</BorderPane>

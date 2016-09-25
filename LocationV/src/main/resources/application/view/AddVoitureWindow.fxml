@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="394.0" prefWidth="927.0" style="-fx-background-color: #313232;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddVoitureController">
+   <bottom>
+      <VBox alignment="TOP_CENTER" prefHeight="453.0" prefWidth="876.0" BorderPane.alignment="CENTER">
+         <children>
+            <GridPane alignment="CENTER" nodeOrientation="RIGHT_TO_LEFT" prefHeight="188.0" prefWidth="802.0" VBox.vgrow="NEVER">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <HBox prefHeight="49.0" prefWidth="265.0" spacing="5.0">
+                     <children>
+                        <Label text="رقم لوحة التعريف" textFill="WHITE">
+                           <padding>
+                              <Insets right="12.0" />
+                           </padding>
+                        </Label>
+                        <TextField fx:id="txtmat" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </HBox>
+                  <HBox prefHeight="64.0" prefWidth="237.0" spacing="5.0" GridPane.columnIndex="1">
+                     <children>
+                        <Label text="اللون " textFill="WHITE">
+                           <padding>
+                              <Insets right="71.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin></Label>
+                        <ComboBox fx:id="cmbxcolor" prefHeight="25.0" prefWidth="129.0">
+                           <HBox.margin>
+                              <Insets right="-1.0" />
+                           </HBox.margin></ComboBox>
+                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="30.0" text="+" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="63.0" prefWidth="276.0" spacing="5.0" GridPane.columnIndex="2">
+                     <children>
+                        <Label text="ثمن الكراء ليوم واحد" textFill="WHITE" />
+                        <TextField fx:id="txtprix" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="39.0" prefWidth="238.0" spacing="5.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <children>
+                        <Label text="نوع السيارة" textFill="WHITE">
+                           <padding>
+                              <Insets right="42.0" />
+                           </padding></Label>
+                        <ComboBox fx:id="txtmarque" nodeOrientation="LEFT_TO_RIGHT" prefHeight="25.0" prefWidth="138.0" />
+                        <Button mnemonicParsing="false" onAction="#marquewindow" prefHeight="25.0" prefWidth="30.0" text="+" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="63.0" prefWidth="246.0" spacing="5.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <children>
+                        <Label text="القدرة" textFill="WHITE">
+                           <padding>
+                              <Insets right="69.0" />
+                           </padding></Label>
+                        <TextField fx:id="txtpuissance" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </HBox>
+                  <HBox prefHeight="39.0" prefWidth="243.0" spacing="5.0" GridPane.rowIndex="1">
+                     <children>
+                        <Label text="رقم العداد" textFill="WHITE">
+                           <padding>
+                              <Insets right="50.0" />
+                           </padding></Label>
+                        <TextField fx:id="txtklm" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="49.0" prefWidth="265.0" spacing="5.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <children>
+                        <Label prefHeight="17.0" prefWidth="87.0" text="صورة السيارة" textFill="WHITE">
+                           <padding>
+                              <Insets right="15.0" />
+                           </padding></Label>
+                        <Button mnemonicParsing="false" onAction="#getimage" prefHeight="24.0" prefWidth="96.0" text="إضافة الصورة" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="49.0" prefWidth="247.0" spacing="5.0" GridPane.rowIndex="2">
+                     <children>
+                        <Label text="الموديل" textFill="WHITE">
+                           <padding>
+                              <Insets right="56.0" />
+                           </padding></Label>
+                        <ComboBox fx:id="cmbxmodel" prefHeight="25.0" prefWidth="129.0" />
+                        <Button mnemonicParsing="false" onAction="#modelwindow" prefHeight="25.0" prefWidth="32.0" text="+" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="136.0" prefHeight="49.0" prefWidth="247.0" spacing="5.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <children>
+                        <Label text="نسبة زيت الفرامل" textFill="WHITE">
+                           <padding>
+                              <Insets right="10.0" />
+                           </padding>
+                        </Label>
+                        <TextField fx:id="txtfrein" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </HBox>
+               </children>
+               <VBox.margin>
+                  <Insets top="50.0" />
+               </VBox.margin>
+            </GridPane>
+            <HBox alignment="CENTER" prefHeight="45.0" prefWidth="897.0" spacing="20.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#addVoiture" prefHeight="34.0" prefWidth="86.0" styleClass="button1" text="إضافة" />
+                  <Button mnemonicParsing="false" prefHeight="34.0" prefWidth="85.0" styleClass="button1" text="إلغاء" />
+               </children>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+         <padding>
+            <Insets left="14.0" top="10.0" />
+         </padding>
+      </VBox>
+   </bottom>
+   <padding>
+      <Insets right="30.0" />
+   </padding>
+   <top>
+      <HBox alignment="CENTER" prefHeight="61.0" prefWidth="897.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="إضافة السيارات إلى البرنامج" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="SansSerif Bold" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+</BorderPane>
